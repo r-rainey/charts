@@ -46,3 +46,7 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
+      token:
+        {{ .Values.token }}
+      subdomains:
+        {{- toYaml .Values.subdomains || nindent 8 }}
