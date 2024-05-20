@@ -46,7 +46,11 @@ spec:
       tolerations:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      token:
-        {{ .Values.token }}
-      subdomains:
-        {{- toYaml .Values.subdomains | nindent 8 }}
+      env:
+        token:
+          name: TOKEN
+          valueFrom: 
+            secretKeyRef: {{ .Values.token }}
+            key: token
+        subdomains:
+          {{- toYaml .Values.subdomains | nindent 10 }}
