@@ -11,5 +11,4 @@ spec:
     - name: ls
       image: busybox
       command: ['ls']
-      # args: ['{{ include "duckdns.fullname" . }}:{{ .Values.service.port }}']
   restartPolicy: Never
