@@ -49,4 +49,4 @@ spec:
       token:
         {{ .Values.token }}
       subdomains:
-        {{- toYaml .Values.subdomains || nindent 8 }}
+        {{- toYaml .Values.subdomains | nindent 8 }}
