@@ -8,8 +8,8 @@ metadata:
     "helm.sh/hook": test
 spec:
   containers:
-    - name: wget
+    - name: ls
       image: busybox
-      command: ['wget']
-      args: ['{{ include "duckdns.fullname" . }}:{{ .Values.service.port }}']
+      command: ['ls']
+      # args: ['{{ include "duckdns.fullname" . }}:{{ .Values.service.port }}']
   restartPolicy: Never
