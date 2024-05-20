@@ -84,3 +84,7 @@ affinity: {}
 secretRef:
 # The duckdns token to change records
   name: duckdns
+subdomains:
+# The domain name you want to change
+  - example.domain.org
+  - example2.domain.org
