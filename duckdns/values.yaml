@@ -85,5 +85,4 @@ token: duckdns
 # The duckdns token to change records
 subdomains:
 # The domain name you want to change
-  - example.domain.org
-  - example2.domain.org
+  - r-house.duckdns.org 
