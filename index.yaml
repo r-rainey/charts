@@ -3,12 +3,12 @@ entries:
   duckdns:
   - apiVersion: v2
     appVersion: 72e081dd-ls20
-    created: "2024-05-20T20:56:42.27285707Z"
+    created: "2024-05-21T06:38:45.361681811Z"
     description: A Helm chart for Kubernetes
     digest: 815cb435dc8235445fe969c95ce638753c597c305c0a06378afc7390ded91c8a
     name: duckdns
     type: application
     urls:
-    - https://github.com/r-rainey/charts/duckdns-0.1.0.tgz
+    - https://r-rainey.github.io/charts/duckdns-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-20T20:56:42.27146031Z"
+generated: "2024-05-21T06:38:45.3604269Z"
