@@ -35,14 +35,13 @@ spec:
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
           env:
-            - token:
-              name: token 
+            - name: TOKEN 
               valueFrom: 
                 secretKeyRef: 
                   name: {{ .Values.token }}
                   key: token
-            - subdomains:
-              {{- toYaml .Values.subdomains | nindent 14 }}
+            - name: SUBDOMAINS
+              value: {{ .Values.subdomains }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}

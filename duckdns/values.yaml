@@ -83,6 +83,5 @@ affinity: {}
 
 token: duckdns 
 # The duckdns token to change records
-subdomains:
+subdomains: example.duckdns.org 
 # The domain name you want to change
-  - r-house.duckdns.org 
